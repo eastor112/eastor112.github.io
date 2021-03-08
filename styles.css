@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  background: url('cushuro.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+
+.sidebar {
+  background-color: #383e56ce;
+  color: #ccc;
+  min-height: 100vh;
+  min-width: 25%;
+  padding: 40px 20px;
+}
+
+div.sidebar__info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sidebar__info.avatar {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.sidebar__info.image {
+  width: 100%;
+}
+
+.sidebar__info.name {
+  margin: 15px 0 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.sidebar__info.job {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.sidebar__nav a {
+  color: rgba(204, 204, 204, 0.829);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+.sidebar__nav a:hover,
+i:hover {
+  color: white;
+}
+
+ul.sidebar__nav a:hover::after {
+  content: "⟩";
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px 25px;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.sidebar__nav.contact {
+  padding: 0px 25px;
+}
+
+.sidebar__nav.touch a {
+  font-size: 0.7rem;
+}
+
+.sidebar__nav.social a {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 15px;
+  color: rgba(211, 211, 211, 0.685);
+  font-size: 0.65rem;
+}
+
+.main {
+  padding: 0px 90px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__tittle {
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
+  line-height: 4.5rem;
+}
+
+.main__description {
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
+  line-height: 4.5rem;
+  margin-bottom: 100px;
+}
+
+.main__description span {
+  font-weight: 500;
+}
+
+.main__buttons a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: solid white 1px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
+}
+
+.main__buttons a:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
