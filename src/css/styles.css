@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -9,11 +9,10 @@
 .wrapper {
   display: flex;
   font-family: 'Roboto', sans-serif;
-  background: url('cushuro.jpg');
+  background: url('../images/cushuro.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
 }
-
 
 .sidebar {
   background-color: #383e56ce;
@@ -55,10 +54,9 @@ div.sidebar__info {
 }
 
 .sidebar a {
-  color: rgba(204, 204, 204, 0.829);
+  color: rgba(255, 255, 255, 0.829);
   text-decoration: none;
 }
-
 
 /*======================== NAV SIDEBAR ========================*/
 .sidebar__nav a {
@@ -70,10 +68,13 @@ div.sidebar__info {
   line-height: 1.8rem;
 }
 
-.sidebar__nav a:hover,
+.sidebar__nav a:hover {
+  font-weight: 300;
+  color: white;
+}
+
 i:hover {
   color: white;
-  font-weight: 300;
 }
 
 ul.sidebar__nav a:hover::after {
@@ -93,13 +94,12 @@ ul.principal li {
   position: relative;
 }
 
-
 li.current::after {
   content: '◀';
   position: absolute;
   color: #fff;
   right: -47px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .current a {
@@ -123,24 +123,28 @@ li.current::after {
   font-size: 0.65rem;
 }
 
-/*======================== MAIN **Content ========================*/
+/*======================== MAIN ========================*/
 .main {
-  padding: 0px 90px;
   width: 100%;
+}
+
+/*================= MAIN - LANDING PAGE =================*/
+.landing {
+  padding: 0px 90px;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.main__tittle {
+.landing__tittle {
   font-size: 3rem;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
   line-height: 4.5rem;
 }
 
-.main__description {
+.landing__description {
   font-size: 2.2rem;
   font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
@@ -148,11 +152,33 @@ li.current::after {
   margin-bottom: 100px;
 }
 
-.main__description span {
+.landing__description span {
   font-weight: 500;
 }
 
-.main__buttons a {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 0;
+  }
+
+  84% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing__buttons {
+  animation: fadeIn 2s;
+}
+
+.landing__buttons a {
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -166,6 +192,26 @@ li.current::after {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.47);
 }
 
-.main__buttons a:hover {
+.landing__buttons a:hover {
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+/*======================== MAIN ** PORTOFOLIO ========================*/
+.portofolio {
+  background-color: #eee;
+  padding: 40px 60px;
+  min-height: 100vh;
+  color: #444;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.intro__title {
+  font-size: 2.25rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.portofolio__intro span {
+  font-weight: bold;
 }
