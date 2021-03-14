@@ -17,12 +17,13 @@
 
 .sidebar {
   background-color: #383e56ce;
-  color: #ccc;
+  color: rgb(255, 255, 255);
   min-height: 100vh;
   min-width: 25%;
   padding: 40px 20px;
 }
 
+/*======================== INFO SIDEBAR **Perfil ========================*/
 div.sidebar__info {
   text-align: center;
   margin-bottom: 50px;
@@ -53,6 +54,13 @@ div.sidebar__info {
   font-weight: 300;
 }
 
+.sidebar a {
+  color: rgba(204, 204, 204, 0.829);
+  text-decoration: none;
+}
+
+
+/*======================== NAV SIDEBAR ========================*/
 .sidebar__nav a {
   color: rgba(204, 204, 204, 0.829);
   text-decoration: none;
@@ -65,6 +73,7 @@ div.sidebar__info {
 .sidebar__nav a:hover,
 i:hover {
   color: white;
+  font-weight: 300;
 }
 
 ul.sidebar__nav a:hover::after {
@@ -78,6 +87,24 @@ ul.sidebar__nav a:hover::after {
   padding: 0px 25px;
   line-height: 1.5rem;
   margin-bottom: 25px;
+}
+
+ul.principal li {
+  position: relative;
+}
+
+
+li.current::after {
+  content: '◀';
+  position: absolute;
+  color: #fff;
+  right: -47px;
+  font-size: 1.2rem;
+}
+
+.current a {
+  color: white;
+  font-weight: 300;
 }
 
 .sidebar__nav.contact {
@@ -96,6 +123,7 @@ ul.sidebar__nav a:hover::after {
   font-size: 0.65rem;
 }
 
+/*======================== MAIN **Content ========================*/
 .main {
   padding: 0px 90px;
   width: 100%;
