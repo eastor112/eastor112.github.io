@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
     integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/styles.css">
 
 
@@ -51,15 +52,21 @@
 
         <div class="sidebar__nav contact">
           <div class="sidebar__nav touch">
-            <a href="">Get in Touch</a>
+            <a href="./contact.html">Get in Touch</a>
           </div>
           <div class="sidebar__nav social">
-            <a href="" class="sidebar_nav mail"><i class="fas fa-envelope-square fa-2x"></i></a>
-            <a href="" class="sidebar_nav facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a href="" class="sidebar_nav twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
-            <a href="" class="sidebar_nav linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="" class="sidebar_nav github"><i class="fab fa-github-square fa-2x"></i></a>
-            <a href="" class="sidebar_nav instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
+            <a href="mailto:emerar.mct@gmail.com" class="sidebar_nav mail"><i
+                class="fas fa-envelope-square fa-2x"></i></a>
+            <a href="https://www.facebook.com/emer.astoR/" class="sidebar_nav facebook"><i
+                class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com/eastor112" class="sidebar_nav twitter"><i
+                class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/eastor112/" class="sidebar_nav linkedin"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/eastor112" class="sidebar_nav github"><i
+                class="fab fa-github-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/eastor112/?hl=es-la" class="sidebar_nav instagram"><i
+                class="fab fa-instagram-square fa-2x"></i></a>
           </div>
         </div>
       </div>
@@ -79,7 +86,9 @@
         <div class="project__section">
           <h2 class="project__overview">01. Some works done in Codigo By Tecsup bootcamp</h2>
 
-          <article class="project left">
+          <!-- articulo -->
+          <article class="project left" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
             <div class="info">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
@@ -106,8 +115,9 @@
             </figure>
           </article>
 
-
-          <article class="project right">
+          <!-- articulo -->
+          <article class="project right" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
             <div class="info">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
@@ -134,9 +144,10 @@
             </figure>
           </article>
 
-
-          <article class="project left">
-            <div class="info">
+          <!-- articulo -->
+          <article class="project left" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
+            <div class="info" data-aos="fade-right">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
                 <h3 class="project__title">HTML Basis</h3>
@@ -162,7 +173,9 @@
             </figure>
           </article>
 
-          <article class="project right">
+          <!-- articulo -->
+          <article class="project right" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
             <div class="info">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
@@ -193,7 +206,7 @@
         <div class="project__section">
           <h2 class="project__overview">02. Personal Projects</h2>
 
-          <article class="project">
+          <article class="project" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
             <div class="left">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
@@ -220,7 +233,7 @@
             </figure>
           </article>
 
-          <article class="project right">
+          <article class="project right" data-aos="fade-up" data-aos-duration="1000">
             <div class="left">
               <div class="project__indicator">
                 <p class="project__class">Practice Work</p>
@@ -253,7 +266,11 @@
 
   </div>
 
-  <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
