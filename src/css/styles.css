@@ -12,14 +12,16 @@
   background: url('../images/cushuro.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .sidebar {
-  background-color: #383e56ce;
+  background-color: #0a192fb6;
   color: rgb(255, 255, 255);
   min-height: 100vh;
-  min-width: 25%;
+  width: 25vw;
   padding: 40px 20px;
+  position: fixed;
 }
 
 /*======================== INFO SIDEBAR **Perfil ========================*/
@@ -70,11 +72,11 @@ div.sidebar__info {
 
 .sidebar__nav a:hover {
   font-weight: 300;
-  color: white;
+  color: #64ffda;
 }
 
 i:hover {
-  color: white;
+  color: #64ffda;
 }
 
 ul.sidebar__nav a:hover::after {
@@ -97,14 +99,20 @@ ul.principal li {
 li.current::after {
   content: '◀';
   position: absolute;
-  color: #fff;
+  color: #64ffda;
   right: -47px;
   font-size: 1.1rem;
 }
 
 .current a {
-  color: white;
+  color: #64ffda;
   font-weight: 300;
+}
+
+.current a::after {
+  content: "⟩";
+  margin-left: 5px;
+  font-weight: 500;
 }
 
 .sidebar__nav.contact {
@@ -125,7 +133,8 @@ li.current::after {
 
 /*======================== MAIN ========================*/
 .main {
-  width: 100%;
+  width: 75vw;
+  margin-left: 25vw;
 }
 
 /*================= MAIN - LANDING PAGE =================*/
@@ -193,25 +202,129 @@ li.current::after {
 }
 
 .landing__buttons a:hover {
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 100px 100px #64ffdb13;
 }
 
 /*======================== MAIN ** PORTOFOLIO ========================*/
 .portofolio {
-  background-color: #eee;
-  padding: 40px 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 40px;
   min-height: 100vh;
-  color: #444;
+  color: #eee;
   font-weight: 300;
   line-height: 1.5rem;
+}
+
+.portofolio__intro {
+  padding: 40px 0 0px 15px;
 }
 
 .intro__title {
   font-size: 2.25rem;
   margin-bottom: 25px;
   font-weight: 400;
+  padding-top: 30px;
 }
 
 .portofolio__intro span {
   font-weight: bold;
+}
+
+.project__overview {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 20px 0px 15px;
+  line-height: 2rem;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.project__section,
+.portofolio__intro {
+  background-color: rgba(68, 68, 68, 0.671);
+  padding-top: 20px;
+}
+
+/* PORTOFOLIO INDIVIDUAL PROJECTS */
+
+/* Project left */
+.project {
+  display: flex;
+  color: #fff;
+  background-color: #0a192f;
+  align-items: center;
+  margin: 0 0 0 40px;
+  padding: 50px 1px 40px 40px;
+  border-bottom: #112240 solid 2px;
+}
+
+.project__class {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #64ffda;
+  letter-spacing: 1px;
+}
+
+.project__title {
+  font-weight: 500;
+  font-size: 1.4rem
+}
+
+.project__description {
+  background-color: #112240;
+  color: #fff;
+  padding: 20px;
+  margin: 15px 0px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  position: relative;
+  width: 110%;
+}
+
+.project__technologies {
+  display: flex;
+  list-style: none;
+}
+
+.project__tech {
+  padding: 0 15px 0 0;
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.project__link {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.project__link i:hover {
+  color: #64ffda;
+}
+
+/* Project right */
+
+.project.right {
+  flex-direction: row-reverse;
+  color: #fff;
+  text-align: right;
+  margin: 0 0 0 40px;
+  padding: 50px 40px 40px 1px;
+}
+
+
+.project.right .project__description {
+  right: 10%;
+  align-self: flex-start;
+}
+
+.project.right .project__technologies {
+  justify-content: flex-end;
+}
+
+.project.right .project__tech {
+  padding: 0 0 0 15px;
 }
