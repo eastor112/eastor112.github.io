@@ -325,3 +325,38 @@ li.current::after {
 .project.right .project__tech {
   padding: 0 0 0 15px;
 }
+
+
+/*======================== MAIN - MY OFFER ========================*/
+.offer {
+  width: 100%;
+  background-color: rgba(68, 68, 68, 0.80);
+  padding: 40px 40px;
+  min-height: 100vh;
+  color: #eee;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+
+/*======================== MAIN - CONTACT ME ========================*/
+
+.contact__source {
+  padding-right: 60px;
+  line-height: 2rem;
+}
+
+.contact__link {
+  color: #64ffdb9f;
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.contact__link i {
+  font-size: 1.2rem;
+  color: #64ffdb;
+}
